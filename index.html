@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    Valerie Hetherington
+    May 26th 2024
+    CS 132
+    This file contains HTML code for Movie Maddness, a website where users can view lists of 
+    movies and tv shows and search for their favorites
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Movies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <script src="utils.js"></script>
+    <script defer src="movies.js"></script>
+</head>
+
+<body>
+    <header>
+        <section id="top-bar">
+            <h1>Movie Madness</h1>
+        </sections>
+        <nav>
+            <ul>
+                <li id="popular-movies">
+                    Popular Movies
+                </li>
+                <li id="top-rated-movies">
+                    Top Rated Movies
+                </li>
+                <li id="now-playing-movies">
+                    Now Playing Movies
+                </li>
+                <li id="popular-tv">
+                    Popular TV 
+                </li>
+                <li id="top-rated-tv">
+                    Top Rated TV
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input type="text" id="search-query" placeholder="Search for a movie...">
+        <button id="search-button">Search</button>
+
+        <div id="message-area" class="hidden"></div>
+        <section id="movie-container">
+            <section id="movie-poster">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Movie data credit: https://developer.themoviedb.org/
+        </p>
+        <p>
+            Movie seats image credit: https://www.delawareonline.com/story/news/2018/10/18/planned-theater-means-milford-residents-wont-have-drive-miles-catch-movie/1661902002/
+        </p>
+        <p>
+            Color palette credit: https://www.schemecolor.com/cinema-tv-logo-colors.php
+        </p>        
+    </footer>
+</body>
